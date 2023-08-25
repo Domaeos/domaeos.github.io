@@ -25,7 +25,7 @@ const pageObject = {
     </ul>
 </div>`,
     socials: `<div class="content socials">Follow my bat-crazy life at:<br><br>
-    <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+    <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a><br>
 <a href="http://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
 
 </div>`
