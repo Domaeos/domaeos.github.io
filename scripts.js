@@ -37,10 +37,10 @@ linkArray.forEach(linkElement => {
 
 function handleClick(event) {
     const oldPage = document.querySelector(".current");
+    event.target.classList.add("current");
     oldPage.classList.remove("current");
     contentElement.classList.add("inactive");
     setTimeout(() => {
-        event.target.classList.add("current");
         contentElement.innerHTML = pageObject[event.target.id];
         contentElement.classList.remove("inactive")}, 550);
 }
