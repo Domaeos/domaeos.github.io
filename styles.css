@@ -1,0 +1,160 @@
+:root {
+    --picture-border-colour: #F17300;
+    --seperator-colour: #2D2E2E;
+    --dark-colour: #0F0F0FEE;
+    --contrast-colour: #618985;
+    --main-colour: #96BBBB;
+    --var-current: #274690;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: #F3E9DC;
+    font-family: Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url("batman_swarm.jpg");
+}
+
+h2 {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    align-self: self-end;
+}
+
+p.name_info {
+    margin: 0px;
+    margin-bottom: 7px;
+    padding: 0px;
+    align-self: self-end;
+}
+
+.pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--picture-border-colour);
+}
+
+.bio_info {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.name_div {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-content: end;
+}
+
+.grid_wrap {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer {
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.top_bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: end;
+}
+
+.link {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    text-align: center;
+    transition: all 0.5s;
+    font-weight: bolder;
+    font-family: Garamond (serif);
+}
+
+.link:hover {
+    background-color: var(--picture-border-colour);
+}
+
+.link.current {
+    color: var(--dark-colour);
+    background-color: var(--picture-border-colour);
+}
+
+.nav_bar {
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    background-color: var(--seperator-colour);
+}
+
+.profile_card {
+    height: 500px;
+    width: 800px;
+    padding: 15px;
+    background-color: #0F0F0FEE;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    box-shadow: 1px 20px 26px 8px #F17300BB;
+}
+
+li {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content_section {
+    overflow: hidden;
+}
+
+.content {
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.content.inactive {
+    transform: translate(-1000px);
+    transition: all 0.5s;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
